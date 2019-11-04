@@ -2,17 +2,13 @@ language: node_js
 node_js:
  - 8
 install:
- - npm install -g npm
+ - npm install
 script: 
  - echo hola mundo
  - npm run echotest
-cache:
-        directories:
-        - node_modules
+ - npm run test
 deploy:
-        provider: heroku
-        app: 
-        api_key:
-                secure: c0352b31-1ab4-4dbe-a181-9fd79051b533
-        on:
-                branch: deploy-heroku
+  provider: heroku
+  api_key:
+    secure: c0352b31-1ab4-4dbe-a181-9fd79051b533
+  app: travistestrichi
