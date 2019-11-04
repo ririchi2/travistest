@@ -1,5 +1,5 @@
 {
 "scripts": {
-  "test": "echo testworks"
+  "test": "echo \"testworks\""
 },
 }
